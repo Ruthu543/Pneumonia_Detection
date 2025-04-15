@@ -11,18 +11,21 @@ env/
 .env
 .env.local
 
-# Jupyter/Notebooks (if used)
+# Jupyter/Notebooks
 .ipynb_checkpoints/
 *.ipynb
 
-# Model/data files (large binaries)
+# Model/data files
 model_weights/
 *.h5
 *.pth
 *.pt
 *.bin
 *.joblib
-data/  # if you have large datasets
+*.tflite
+*.onnx
+*.pkl
+data/
 
 # IDE specific
 .vscode/
@@ -34,17 +37,22 @@ data/  # if you have large datasets
 .DS_Store
 Thumbs.db
 *.log
-# Project-specific additions for Pneumonia Detection
-/chest_xray/           # X-ray images dataset
-*.zip                  # All zip files
-*.jpg                  # If you have individual image files
+
+# Project-specific
+/chest_xray/
+/trained_models/
+/notebooks/
+/test_results/
+/tmp/
+/logs/
+
+# File types
+*.zip
+*.jpg
+*.jpeg
 *.png
-/test_results/         # Any test output folders
-/tmp/                  # Temporary files
-/logs/                 # Training logs
-*.csv                  # Large data files
-*.npy                  # NumPy arrays
-*.pkl                  # Pickle files
-echo "chest_xray/" >> .gitignore
-echo "*.zip" >> .gitignore
-echo "static/uploads/" >> .gitignore
+*.csv
+*.npy
+
+# Web app specific
+static/uploads/
