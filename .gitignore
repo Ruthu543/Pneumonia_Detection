@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.pyproj
+*.pyz
+venv/
+env/
+.venv/
+.env
+.env.local
+
+# Jupyter/Notebooks (if used)
+.ipynb_checkpoints/
+*.ipynb
+
+# Model/data files (large binaries)
+model_weights/
+*.h5
+*.pth
+*.pt
+*.bin
+*.joblib
+data/  # if you have large datasets
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+# Project-specific additions for Pneumonia Detection
+/chest_xray/           # X-ray images dataset
+*.zip                  # All zip files
+*.jpg                  # If you have individual image files
+*.png
+/test_results/         # Any test output folders
+/tmp/                  # Temporary files
+/logs/                 # Training logs
+*.csv                  # Large data files
+*.npy                  # NumPy arrays
+*.pkl                  # Pickle files
