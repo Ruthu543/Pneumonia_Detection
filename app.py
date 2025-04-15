@@ -13,7 +13,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
-model = load_model('model/best_model.h5')
+model = load_model(r"C:\Users\HP\DL Project\Pneumonia_Detection\model\best_model.h5")
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
