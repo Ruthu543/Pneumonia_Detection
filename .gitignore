@@ -45,3 +45,6 @@ Thumbs.db
 *.csv                  # Large data files
 *.npy                  # NumPy arrays
 *.pkl                  # Pickle files
+echo "chest_xray/" >> .gitignore
+echo "*.zip" >> .gitignore
+echo "static/uploads/" >> .gitignore
